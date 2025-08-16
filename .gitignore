@@ -1,0 +1,15 @@
+# Root-level ignores
+.DS_Store
+.env
+node_modules/
+
+# Client
+client/node_modules/
+client/dist/
+client/build/
+
+# Server
+server/node_modules/
+server/dist/
+server/build/
+server/.env
