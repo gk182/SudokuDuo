@@ -1,22 +1,30 @@
 # Sudoku Duo - Dark Theme Starter (MERN + Socket.IO)
 
-Features:
-- Two-player realtime Sudoku synchronized for both players (simultaneous view)
-- Dark theme UI (Vite + React)
-- Server restructured for easier maintenance (services + sockets + controllers)
-- Rule: 3 wrong moves by a player -> that player loses and game ends
-- Simple preset-based puzzle generator (MVP) — can be replaced by unique-solution generator later
+Sudoku Duo là một trò chơi Sudoku trực tuyến cho **2 người chơi** với giao diện **Dark Theme**, sử dụng **React (Vite)** cho frontend và **Node.js + Express + Socket.IO** cho backend.
 
-Quick start:
-1. Unzip and open two terminals.
-2. Server:
-   cd server
-   cp .env.example .env
-   npm install
-   npm run dev
-3. Client:
-   cd client
-   npm install
-   npm run dev
+## Features
 
-Server runs at http://localhost:4000, Client at http://localhost:5173 by default.
+- **Two-player realtime Sudoku**: Cả hai người chơi sẽ thấy bảng Sudoku đồng bộ cùng lúc.
+- **Dark theme UI**: Giao diện hiện đại, dễ nhìn, phù hợp với chế độ tối.
+- **Structured server**: Server được tách thành các phần **services**, **controllers**, và **sockets** để dễ bảo trì.
+- **Gameplay rule**: Mỗi người chơi chỉ được phép sai tối đa **3 lần**; sai quá 3 lần sẽ thua và kết thúc trò chơi.
+- **Simple preset-based puzzle generator**: Phiên bản MVP sử dụng generator dựa trên các preset. Sau này có thể thay thế bằng generator tạo Sudoku với **giải pháp duy nhất**.
+
+## Quick Start
+
+### 1. Chuẩn bị môi trường
+- Đảm bảo bạn đã cài đặt **Node.js >= 18** và **npm**.
+
+### 2. Chạy server
+```bash
+cd server
+cp .env.example .env
+npm install
+npm run dev
+```
+### 3. Chạy client
+```bash
+cd client
+npm install
+npm run dev
+```
