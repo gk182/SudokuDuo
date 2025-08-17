@@ -235,3 +235,20 @@ body {
   .chat-panel { position: relative; width: 100%; margin-top: 12px; height: auto; padding: 8px; }
   .chat-stream { max-height: 220px; overflow-y: auto; }
 }
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 700;
+}
+.modal-close:hover {
+  color: var(--primary);
+}
+.modal {
+  position: relative; /* cần để modal-close position:absolute căn đúng */
+}
