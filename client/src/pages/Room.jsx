@@ -139,6 +139,14 @@ export default function Room() {
       {showCreateModal && (
         <div className="modal-overlay">
           <div className="modal">
+            {/* Nút đóng góc phải */}
+            <button
+              className="modal-close"
+              onClick={() => setShowCreateModal(false)}
+              aria-label="Đóng modal"
+            >
+              ×
+            </button>
             <div className="modal-title">Chọn độ khó</div>
             <div className="modal-grid">
               {DIFFICULTIES.map((d) => (
@@ -178,6 +186,14 @@ export default function Room() {
       {showReplayModal && (
         <div className="modal-overlay">
           <div className="modal">
+            {/* Nút đóng góc phải */}
+            <button
+              className="modal-close"
+              onClick={() => setShowCreateModal(false)}
+              aria-label="Đóng modal"
+            >
+              ×
+            </button>
             <div className="modal-title">Chơi lại?</div>
             <div className="modal-grid">
               {DIFFICULTIES.map((d) => (
